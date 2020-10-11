@@ -1,0 +1,39 @@
+.btn {
+    display: inline-block;
+    outline: none !important;
+    text-align: center;
+    font-family: $roboto;
+    font-weight: 500;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 2px;
+    padding: 5px 14px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.btn-success {
+    background: #fff;
+    border: 1px solid #CDCDCD;
+    text-transform: uppercase;
+    color: #CDCDCD;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: #33CC00;
+        color: #fff;
+        border-color: #33CC00;
+    }
+}
+
+.btn-secondary {
+
+}

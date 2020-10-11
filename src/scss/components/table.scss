@@ -1,0 +1,187 @@
+.table {
+
+}
+
+
+.table thead {
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.table td, 
+.table th {
+    border: none;
+    vertical-align: middle;
+    padding: 0 10px;
+
+    @media (max-width: 991px) {
+        padding: 0 5px;
+    }
+}
+
+.table th {
+    font-size: 10px;
+    color: #636363;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 10px;
+
+    @media (max-width: 767px) {
+        display: block;
+    }
+}
+
+.table thead tr {
+    height: 40px;
+
+    @media (max-width: 767px) {
+        display: block;
+        height: auto;
+    }
+}
+
+.table thead th {
+    vertical-align: middle;
+    border: none;
+
+    @media (max-width: 767px) {
+        padding: 3px 0;
+    }
+}
+
+.table tr {
+    height: 56px;
+    background: #fff;
+    border-bottom: 2px solid #EDF1F3;
+
+    &:hover {
+        .month {
+            color: #33CC00;
+        }
+
+        .btn-success {
+            background: #33CC00;
+            color: #fff;
+            border-color: #33CC00;
+        }
+    }
+
+    @media (max-width: 767px) {
+        height: auto;
+    }
+}
+
+.table tr:nth-child(odd) {
+    background: #FAFAFA;
+}
+
+.table tr.tr-year {
+    background: #EDF1F3;
+    height: 40px;
+
+    @media (max-width: 767px) {
+        height: auto;
+        padding: 5px;
+    }
+}
+
+.table tr.tr-year svg {
+    margin: 0 4px;
+}
+
+.table tr.tr-year span {
+    font-family: $muller;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.table tr td {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    
+    @media (max-width: 991px) {
+        font-size: 12px;
+    }
+
+    @media (max-width: 767px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+    }
+}
+
+.table .tr-year td {
+    text-align: left;
+}
+
+.table-list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.table-list li {
+    min-width: 30px;
+    text-align: center;
+    position: relative;
+    margin-right: 3px;
+}
+
+.table-list li:after {
+    content: '/';
+    color:#CDCDCD;
+    position: absolute;
+    top: 0;
+    right: -4px;
+}
+
+.table-list li:last-child {
+    margin-right: 0;
+}
+
+.table-list li:last-child:after {
+    content: none;
+}
+
+
+.table tr td:last-child:not(:first-child) {
+    text-align: right;
+    padding-right: 27px;
+
+    @media (max-width: 767px) {
+        padding-right: 5px;
+        justify-content: center;
+    }
+}
+
+.table tr.result {
+    background: #CEEFCF;
+}
+
+.table tbody tr td:nth-child(1),
+.table thead tr th:nth-child(1) {
+    @media (max-width: 991px) {
+        display: none;
+    }
+    
+}
+
+.table-th-xs {
+    display: none;
+    cursor: pointer;
+
+    @media (max-width: 767px) {
+        display: inline-block;
+    }
+}
+
+.sort-info {
+    cursor: pointer;
+}
